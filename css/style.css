@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: "RobotoBold";
     src: url("../fonts/RobotoBold.eot");
     src: url("../fonts/RobotoBold.eot") format("embedded-opentype"),
@@ -16,16 +16,12 @@
          url("../fonts/RobotoMedium.woff") format("woff"),
          url("../fonts/RobotoMedium.ttf") format("truetype"),
          url("../fonts/RobotoMedium.svg#RobotoMedium") format("svg");
-}
+}*/
 
 @font-face {
     font-family: "RobotoRegular";
-    src: url("../fonts/RobotoRegular.eot");
-    src: url("../fonts/RobotoRegular.eot") format("embedded-opentype"),
-         url("../fonts/RobotoRegular.woff2") format("woff2"),
-         url("../fonts/RobotoRegular.woff") format("woff"),
-         url("../fonts/RobotoRegular.ttf") format("truetype"),
-         url("../fonts/RobotoRegular.svg#RobotoRegular") format("svg");
+    src: url("../fonts/RobotoRegular.woff2") format("woff2"),
+         url("../fonts/RobotoRegular.woff") format("woff");
 }
 
 body{
@@ -113,7 +109,7 @@ body>input[type="radio"]{display: none;}
 .main-navigation-item{
 	color: #fff;
 	line-height: 18px;
-	font-family: "RobotoBold", "Arial", sans-serif;
+	font-weight: bold;
 	display: block;
 	padding: 7px 13px 7px 14px;
 	text-decoration: underline;
@@ -250,7 +246,7 @@ body>input[type="radio"]{display: none;}
 	vertical-align: top;
 	font-size: 14px;
 	line-height: 16px;
-	font-family: "RobotoMedium", "Arial", sans-serif;
+	font-weight: 500;
 	color: #fff; 
 	text-decoration: none;
 }
@@ -422,7 +418,7 @@ input{
     padding: 10px 25px;
     font-size: 18px;
     line-height: 24px;
-    font-family: "RobotoBold", "Arial", sans-serif;
+    font-weight: bold;
     color: #fff;
     border-radius: 25px;
     text-decoration: none;
@@ -602,7 +598,7 @@ td{
 	margin-right: -573px;
 	top: 72px;
 	text-align: right;
-	font-family: "RobotoBold", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .main-header-contact p{
@@ -639,7 +635,7 @@ td{
   	margin-bottom: 32px;
   	font-size: 60px;
   	line-height: 60.35px;
-  	font-family: "RobotoBold", "Arial", sans-serif;
+  	font-weight: bold;
   	padding: 41px 9px 0px 13px;
 }
 
@@ -719,7 +715,7 @@ td{
 	font-weight: 600;
 	font-size: 35px;
 	line-height: 41px;
-	font-family: "RobotoBold", "Arial", sans-serif;
+	font-weight: bold;
 	margin: 0;
 	margin-bottom: 16px;
 	color: #fff;
@@ -730,7 +726,7 @@ td{
 	line-height: 22px;
 	margin: 0;
 	margin-bottom: 44px;
-	font-family: "RobotoBold", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .strawberry-item{
@@ -812,7 +808,7 @@ td{
 	font-size: 16px;
 	line-height: 22px;
 	color: #fff;
-	font-family: "RobotoMedium", "Arial", sans-serif;
+	font-weight: 500;
 	text-decoration: underline;
 }
 
@@ -841,7 +837,7 @@ td{
 	position: absolute;
     bottom: 18px;
     left: 1px;
-    font-family: "RobotoBold", "Arial", sans-serif;
+    font-weight: bold;
 }
 
 .price{
@@ -875,8 +871,7 @@ td{
 .index-headline {
 	font-size: 24px;
 	line-height: 30px;
-	font-family: "RobotoMedium", "Arial", sans-serif;
-	font-weight: 400;
+	font-weight: 500;
  	color: #323232;
  	margin: 0;
  	padding-bottom: 10px;
@@ -895,7 +890,7 @@ td{
 	padding-bottom: 8px;
 	padding-left: 57px;
 	padding-top: 13px;
-	font-family: "RobotoRegular", "Arial", sans-serif;
+	font-weight: 500;
 }
 
 .advantages:nth-child(odd){margin-right: 0px;}
@@ -928,7 +923,7 @@ td{
 	width: 560px;
 	box-sizing: border-box;
 	min-height: 220px;
-	font-family: "RobotoMedium", "Arial", sans-serif;
+	font-weight: 500;
 }
 
 .news-headline {
@@ -942,7 +937,7 @@ td{
 	display: inline-block;
 	font-size: 24px;
 	line-height: 30px;
-	font-family: "RobotoBold", "Arial", sans-serif;
+	font-weight: bold;
 	color: #323232;
 	text-decoration: underline;
 	max-width: 300px;
@@ -1010,7 +1005,23 @@ td{
 	padding: 10px 19px;
 }
 
-.map{position: relative;}
+.map{
+	width: 100%;
+	max-height: 436px;
+	position: relative;
+	background: url(../img/map.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.map:before{
+	content: "";
+	position: absolute;
+	top: 42%;
+	left: 22%;
+	width: 218px;
+	height: 142px;
+	background: url(../img/pin.png) no-repeat center center;
+}
 
 .map-canvas{
 	width: 100%;
@@ -1042,7 +1053,7 @@ td{
 	font-size: 18px;
 	line-height: 24px;
 	color: #323232;
-	font-family: "RobotoBold", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .main-contacts  .phone{
@@ -1375,8 +1386,7 @@ td{
 	font-size: 14px;
 	line-height: 16px;
 	padding: 7px 0px 6px 17px;
-	font-weight: 400;
-	font-family: "RobotoMedium", "Arial", sans-serif;
+	font-weight: 500;
 }
 
 .sorting-part option{outline: none;}
@@ -1390,12 +1400,11 @@ td{
 	width: 192px;	
 	background: transparent url(../img/marker.png) 93% 48% no-repeat;
 	color: #fff;
-	font-weight: bold;	
+	font-weight: 500;	
 	border-radius: 30px;
 	padding: 8px 17px;
 	font-size: 16px;
 	line-height: 18px;
-	font-family: "RobotoMedium", "Arial", sans-serif;
 	border: none;
 	outline: none;
 	-webkit-appearance: none;
@@ -1678,7 +1687,7 @@ td{
 }
 .footer-info .providers{
 	background: url(../img/heart.png) no-repeat 0% 50%;
-	font-family: "RobotoBold", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .footer-info a{
