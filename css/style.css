@@ -335,8 +335,8 @@ input{
 
 .login-block{
 	display: inline-block;
-    vertical-align: top;
-    padding-bottom: 10px;
+  vertical-align: top;
+  padding-bottom: 10px;
 }
 
 .login-block:hover .office-login-form{display: block;}
